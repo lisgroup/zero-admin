@@ -243,6 +243,8 @@ message CouponProductCategoryRelationAddResp {
 
 message CouponProductCategoryRelationListReq {
   int64  ProductCategoryId = 1;
+  int64 pageSize = 2;
+  int64 current = 3;
 }
 
 message CouponProductCategoryRelationListData{
@@ -301,6 +303,8 @@ message CouponProductRelationAddResp {
 
 message CouponProductRelationListReq {
   int64    ProductId = 1;
+  int64 pageSize = 2;
+  int64 current = 3;
 }
 
 message CouponProductRelationListData{
