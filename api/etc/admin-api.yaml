@@ -1,6 +1,8 @@
 Name: admin-api
 Host: 0.0.0.0
 Port: 8888
+# 超时控制，单位：毫秒
+Timeout: 2000
 
 #系统
 SysRpc:
@@ -55,4 +57,4 @@ Prometheus:
 
 Redis:
   Address: 127.0.0.1:6379
-  Pass: 123456
+  Pass:
