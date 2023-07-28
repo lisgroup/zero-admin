@@ -39,17 +39,3 @@ for cmd in "${commands[@]}"; do
     echo "Running command: $cmd"
     eval "$cmd"
 done
-
-#echo "ums"
-#go run rpc/ums/ums.go -f rpc/ums/etc/ums.yaml > ums.log 2>&1 &
-#echo "oms"
-#go run rpc/oms/oms.go -f rpc/oms/etc/oms.yaml > oms.log 2>&1 &
-#echo "pms"
-#go run rpc/pms/pms.go -f rpc/pms/etc/pms.yaml > pms.log 2>&1 &
-#echo "sms"
-#go run rpc/sms/sms.go -f rpc/sms/etc/sms.yaml > sms.log 2>&1 &
-#echo "cms"
-#go run rpc/cms/cms.go -f rpc/cms/etc/cms.yaml > cms.log 2>&1 &
-#go run rpc/sys/sys.go -f rpc/sys/etc/sys.yaml > sys.log 2>&1 &
-#echo "api"
-#go run api/admin.go -f api/etc/admin-api.yaml > admin-api.log 2>&1
