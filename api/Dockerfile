@@ -1,4 +1,4 @@
-FROM golang:alpine AS builder
+FROM golang:1.20-alpine AS builder
 
 LABEL stage=gobuilder
 
@@ -25,5 +25,7 @@ ENV TZ Asia/Shanghai
 WORKDIR /app
 COPY --from=builder /app/admin /app/admin
 COPY --from=builder /app/etc /app/etc
+
+EXPOSE 8888
 
 CMD ["./admin", "-f", "etc/admin-api.yaml"]
